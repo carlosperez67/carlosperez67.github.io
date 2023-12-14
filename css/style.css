@@ -1,0 +1,126 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background: #005f73;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #0a9396;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background: #94d2bd;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    background: #ee9b00;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+
+ul ul {
+    margin-left: 20px;
+}
+
+#hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ee9b00; /* Change this to your preferred background color or image */
+    color: #0d0101; /* Change this to your preferred text color */
+    z-index: 1;
+    border-radius: 25px; /* Add this line */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    background: linear-gradient(90deg, #bc1b1b, #ee9b00, #bc1b1b);
+    background-size: 1000px 1000px;
+    animation: shimmer 5s linear infinite;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Change this line */
+}
+
+.scroll-down-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
