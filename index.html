@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Perez - Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         /* Add your CSS styles here */
         body {
@@ -72,6 +73,44 @@
         <h3>Work Experience</h3>
         <p>Jr Software Engineer, Tasktop Technologies / Planview (Vancouver BC) - Currently completing the CI/CD pipeline migration from Jenkins to GitHub Actions.</p>
         <p>Data Engineer Co-op, Rogers Communications (Brampton ON) - Worked with the Data Engineering team on data transfer and automation workflows during the Shaw and Rogers merger.</p>
+    </div>
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <h3>Hex Maze Generator and Solver</h3>
+        <ul>
+            <li>Implemented the Hex Cell Maze creation using a hex-tree like data structure.
+                <ul>
+                    <li>Implementation used a level order traversal to minimize asymptotic time complexity.</li>
+                    <li>Used a RBGPixel library to render mazes in colour.</li>
+                </ul>
+            </li>
+            <li>Implementation of maze solver treated the hex-tree as a graph and used a modified Dijkstra’s algorithm to find the shortest path from the start to finish of maze.
+                <ul>
+                    <li>Took asymptotic time complexities into consideration to create an O(nlogn) solution.</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="https://github.com/carlosperez67/HexMazeGenerator-Solver" target="_blank">GitHub Repository</a>
+    
+        <h3>Java Grocery Tracker</h3>
+        <ul>
+            <li>Enabled users to use the console or GUI to track grocery items using OOP design
+                principles.
+                <ul>
+                    <li>Used an array-based implementation with constant time addition and linear time
+                        find capabilities.</li>
+                </ul>
+            </li>
+            <li>Designed the ability for the list of grocery items to be sorted and displayed based on
+                various parameters given by the user.
+            </li>
+            <li>Created a complete JUnit test suite.
+            </li>
+
+        </ul>
+        <a href="https://github.com/carlosperez67/Grocery-Tracker" target="_blank">GitHub Repository</a>
+    
+        <!-- Add more projects as needed -->
     </div>
     <div class="container" id="contact">
         <h2>Contact</h2>
