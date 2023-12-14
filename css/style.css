@@ -5,7 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* or any size you want */
+    height: auto; /* keep the aspect ratio */
+    border-radius: 25px;
+}
 /* Body and Typography */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
