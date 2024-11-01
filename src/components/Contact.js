@@ -22,19 +22,23 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-20 bg-gray-100">
+        <section
+            id="contact"
+            className="py-20"
+            style={{ backgroundColor: 'rgba(26, 26, 46, 0.5)' }} // Semi-transparent background
+        >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-semibold mb-6">Contact</h2>
+                <h2 className="text-3xl font-semibold mb-6 text-white">Contact</h2>
                 <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
                     <div className="mb-4">
-                        <label htmlFor="name" className="block text-lg mb-2">
+                        <label htmlFor="name" className="block text-lg mb-2 text-gray-300">
                             Name
                         </label>
                         <input
                             type="text"
                             id="name"
                             name="name"
-                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring"
+                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring bg-gray-700 text-white"
                             value={formData.name}
                             onChange={handleChange}
                             required
@@ -42,14 +46,14 @@ const Contact = () => {
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="email" className="block text-lg mb-2">
+                        <label htmlFor="email" className="block text-lg mb-2 text-gray-300">
                             Email
                         </label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring"
+                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring bg-gray-700 text-white"
                             value={formData.email}
                             onChange={handleChange}
                             required
@@ -57,13 +61,13 @@ const Contact = () => {
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="message" className="block text-lg mb-2">
+                        <label htmlFor="message" className="block text-lg mb-2 text-gray-300">
                             Message
                         </label>
                         <textarea
                             id="message"
                             name="message"
-                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring"
+                            className="w-full border rounded px-3 py-2 focus:outline-none focus:ring bg-gray-700 text-white"
                             rows="5"
                             value={formData.message}
                             onChange={handleChange}
@@ -80,18 +84,19 @@ const Contact = () => {
                 </form>
                 <div className="flex justify-center space-x-6 mt-8">
                     <a href="mailto:youremail@example.com" aria-label="Email">
-                        <FaEnvelope size={30} className="text-gray-700 hover:text-blue-500 transition" />
+                        <FaEnvelope size={30} className="text-gray-300 hover:text-blue-500 transition" />
                     </a>
                     <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <FaLinkedin size={30} className="text-gray-700 hover:text-blue-500 transition" />
+                        <FaLinkedin size={30} className="text-gray-300 hover:text-blue-500 transition" />
                     </a>
                     <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <FaGithub size={30} className="text-gray-700 hover:text-blue-500 transition" />
+                        <FaGithub size={30} className="text-gray-300 hover:text-blue-500 transition" />
                     </a>
                 </div>
             </div>
         </section>
     );
+
 };
 
 export default Contact;
