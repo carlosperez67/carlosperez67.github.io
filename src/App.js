@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Resume from './components/WorkExperience';
+import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ThreeBackground from './components/ThreeBackground';
@@ -20,8 +20,8 @@ function App() {
                 <div className="pt-16"> {/* Offset for fixed navbar */}
                     <Home />
                     <About />
-                    <Resume />
-                    <Projects />
+                    <WorkExperience />
+                    {/*<Projects />*/}
                     <Contact />
                 </div>
             </div>

@@ -4,22 +4,41 @@ import React from 'react';
 
 const experiences = [
     {
-        title: 'Software Engineer Intern',
-        company: 'Bioinformatics Solutions Inc.',
-        duration: 'May 2023 - Aug 2023',
-        description: 'Developed tools to analyze genomic data and optimize data processing pipelines, improving efficiency by 25%. Collaborated with a team of bioinformaticians and software developers to deliver high-quality data analysis tools for healthcare clients.',
+        title: 'Full-Stack Developer COOP',
+        company: 'Government of Canada',
+        location: 'Ottawa, ON',
+        duration: 'May 2024 - Aug 2024',
+        description: [
+            'Led the development of a full-stack comment service using TypeScript and Angular, collaborating directly with stakeholders to plan and deliver an epic to clients.',
+            'Developed REST API endpoints, database migration scripts, and a recursive frontend comment component for CRUD actions.',
+            'Increased log ingestion reliability and eliminated several hours of downtime by implementing a Dead Letter Queue with RabbitMQ, providing visibility into failed messages and ensuring continuous system uptime.',
+            'Delivered diverse features across multiple applications as part of a small, agile team, requiring minimal supervision while actively participating in design decisions and implementing full-stack changes across repositories.',
+            'Played a key role in reviewing other engineers’ work, identifying potential issues early, and ensuring high standards in code quality.',
+        ],
     },
     {
-        title: 'Research Assistant',
-        company: 'UBC Department of Computer Science',
-        duration: 'Sep 2022 - Apr 2023',
-        description: 'Assisted in research focused on the intersection of computer science and medicine. Analyzed large datasets and created data visualizations to support research findings. Contributed to a publication on machine learning applications in medical imaging.',
+        title: 'Junior Software Engineer',
+        company: 'Planview',
+        location: 'Vancouver, BC',
+        duration: 'Sep 2023 - May 2024',
+        description: [
+            'Led CI/CD pipeline migration from Jenkins to GitHub Actions, reducing deployment time by 20% and phasing out legacy on-prem servers prone to crashes.',
+            'Automated AWS EC2 disk upsizing with Ansible playbooks, massively reducing manual intervention and downtime, freeing up substantial engineering hours.',
+            'Developed a deployment monitoring web application using Python and Vue.js, improving visibility into ArgoCD processes.',
+            'Designed and configured scalable cloud infrastructure (EKS, EC2, Karpenter) with automated releases and infrastructure management using Terraform on AWS.',
+            'Addressed critical infrastructure issues, writing POSIX-compliant scripts and cron jobs to enable self-healing and ensure system resilience.',
+        ],
     },
     {
-        title: 'Junior Developer',
-        company: 'Tech Innovations Ltd.',
-        duration: 'Jan 2022 - Aug 2022',
-        description: 'Built and maintained features for a web application used by over 10,000 users. Improved the performance of front-end components and collaborated with a cross-functional team to implement new functionality.',
+        title: 'Data Engineer COOP',
+        company: 'Rogers Communications',
+        location: 'Toronto, ON',
+        duration: 'May 2022 - Aug 2022',
+        description: [
+            'Automated workflows and data pipelines using Python and Azure Data Factory, streamlining data processing across systems.',
+            'Enhanced Python scripts to dynamically generate SQL stored procedures based on parameters from .xlsx and .csv files, expanding functionality and reducing manual work.',
+            'Executed complex SQL queries in DBeaver and MySQL to securely ingest encrypted customer data into Oracle, Hadoop, and Azure databases, ensuring data integrity across platforms.',
+        ],
     },
     // Add more experiences as needed
 ];
@@ -45,8 +64,12 @@ const WorkExperience = () => {
                         >
                             <h3 className="text-2xl font-bold text-gray-800">{experience.title}</h3>
                             <p className="text-lg text-gray-700 font-semibold">{experience.company}</p>
-                            <p className="text-sm text-gray-500 italic">{experience.duration}</p>
-                            <p className="mt-4 text-gray-600">{experience.description}</p>
+                            <p className="text-sm text-gray-500 italic">{experience.location} | {experience.duration}</p>
+                            <ul className="mt-4 list-disc list-inside text-gray-600 space-y-2">
+                                {experience.description.map((bullet, i) => (
+                                    <li key={i}>{bullet}</li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>

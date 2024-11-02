@@ -16,20 +16,31 @@ const About = () => {
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-semibold mb-10 text-white text-center">About Me</h2>
                 <div className="text-lg text-gray-200 max-w-3xl text-center mx-auto space-y-6">
+
                     <p>
-                        Hello! I’m Carlos Perez, a 4th-year Computer Science student at UBC with a deep interest in bioinformatics, software engineering,
-                        and the intersection of technology and medicine. I'm passionate about leveraging computational tools to address
-                        complex biological problems and making impactful contributions to healthcare technology.
+                        <span className="font-semibold">🔹 Pursuing Impact through Technology</span>
+                        <br />
+                        I’m currently completing my Bachelor’s degree in Computer Science at the University of British Columbia, driven by a passion for using technology to tackle real-world challenges and make a lasting impact. My goal? To blend innovation with purpose and push the boundaries of what’s possible in software development.
                     </p>
+
                     <p>
-                        Over the past few years, I have gained experience in bioinformatics research, software development,
-                        and data analysis through internships and academic projects. My goal is to continue advancing my skills
-                        in these areas while collaborating with interdisciplinary teams to drive innovation in biotechnology and healthcare.
+                        <span className="font-semibold">🔹 Adventurer at Heart</span>
+                        <br />
+                        When I’m not coding, you’ll find me out in the wild! As an avid skier, rock climber, and hiker, I’m constantly on the hunt for new peaks to conquer and trails to explore. The resilience and problem-solving mindset I bring to my outdoor adventures also fuel my approach to technology—whether it’s scaling a mountain or tackling a challenging project, I’m all in.
                     </p>
+
                     <p>
-                        Beyond coding, I enjoy reading about the latest advancements in biotechnology, exploring the outdoors,
-                        and connecting with professionals who share my enthusiasm for technology-driven solutions in medicine.
+                        <span className="font-semibold">🔹 Always Learning, Always Adapting</span>
+                        <br />
+                        In the ever-evolving field of software development, I believe adaptability and a thirst for learning are essential. I’m enthusiastic about collaborating with others, sharing ideas, and diving into new challenges that push me out of my comfort zone.
                     </p>
+
+                    <p>
+                        <span className="font-semibold">Let’s Connect!</span>
+                        <br />
+                        I’m open to opportunities, networking, and discussions on all things tech. Whether you’re working on an exciting project or just looking to connect, feel free to reach out—I’m eager to chat!
+                    </p>
+
                 </div>
             </div>
         </section>
